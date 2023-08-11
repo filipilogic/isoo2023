@@ -1,0 +1,21 @@
+/* Buttons */
+
+.il_btn {
+    padding: 2.2rem 6.8rem;
+    display: inline-flex;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    transition: var(--theme-transition);
+    &.button-color-green, &.button-hover-color-green:hover {
+      background-color: var(--color-2);
+    }
+    &.button-color-pink, &.button-hover-color-pink:hover {
+      background-color: var(--color-3);
+    }
+    &:not(:last-child), &:not(:last-child):not(:only-child) {
+      margin-right: 3rem;
+    }
+  }

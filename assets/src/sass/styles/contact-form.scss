@@ -1,0 +1,98 @@
+.wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3.6rem;
+    text-align: left;
+    p {
+        width: 100%;
+        @include limbo-min {
+            width: 48%;
+            margin-bottom: 24px;
+        }
+    }
+    .textarea-add-info {
+        width: 100%;
+        margin-right: 0;
+    }
+    .submit-button {
+        @include tab-max {
+            margin-top: 1.5rem;
+        }
+        @include limbo-min {
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+    input:not(.wpcf7-submit), select, textarea {
+        border: 0px;
+        border-radius: 12px;
+        width: 100%;
+        appearance: none;
+        background-color: #fff;
+        background-position: center left 1.25rem;
+        background-repeat: no-repeat;
+        padding: 1.2rem 2rem 1.2rem 4.5rem;
+        background-color: #F0F0F0;
+        box-shadow: 2px 2px 4px 0px rgba(12, 11, 65, 0.10);
+        @include tab-max {
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+    }
+    select {
+        background-position: center right 3.2rem;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADrSURBVHgBpZPbFYIwEESTVGAHQh+AphOtwGMH0IFWIHRgB+HxQRlSAgXwcJYDnqBEEOdns7AZbpYNZ1Ce51Zd1ycsN2y5yqZpEs/z7pyyLMseCBZbJymUUtYfBoxzvh1IFMKerVBVVbbo1wFbJ19KWXQmruvGCPEvu9u2LUAR0VpoWEeEcqmJEKKjGJn0Dy5LDIjCcZzoZai/BM2VCuZMMFNyRKUnoKHjBDMU4XCMSRMSJjBkX5oMio+PCEOticZ/pyBxQzFL0/SGaTwMOfUKlPZUrYmEsM96k+mXmmqNJCS6V9i8AxFRJKa6JydNYc7vndbiAAAAAElFTkSuQmCC);
+        background-size: 2.1rem;
+        @include tab-max {
+            background-size: 3.4rem;
+        }
+    }
+    textarea {
+        padding-left: 2rem;
+    }
+    input:not(.wpcf7-submit):focus-visible, select:focus-visible, textarea:focus-visible {
+        outline: none;
+    }
+    input:not(.wpcf7-submit), select, textarea, input:not(.wpcf7-submit)::placeholder, select::placeholder, textarea::placeholder {
+        font-size: 14px;
+        color: #000;
+        font-weight: 500;
+        @include limbo-max {
+            font-size: 16px;
+        }
+        @include mob-only {
+            font-size: 15px;
+        }
+    }
+    input.wpcf7-submit {
+        margin-top: 5px;
+        padding: 2.2rem 6.8rem;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 8px;
+        border: none;
+        transition: var(--theme-transition);
+        font-size: 18px;
+        min-width: 29.4rem;
+        background-color: var(--color-3);
+        line-height: 1.2;
+        @include tab-max {
+            line-height: 20px;
+        }
+    }
+    input.wpcf7-submit:hover {
+        background: var(--color-2);
+    }
+    div.wpcf7-response-output {
+        font-size: 14px;
+        margin-top: 1.2em;
+    }
+    .wpcf7-not-valid-tip {
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+    .wpcf7-spinner {
+        display: none;
+    }
+  }
