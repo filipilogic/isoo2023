@@ -2501,15 +2501,15 @@ div.margin-xl {
   margin-top: 27px;
 }
 
-.cf7-apply-section .intro_text img {
-  margin-top: 9rem;
+.cf7-apply-section .il_block_intro img {
+  margin-top: 7rem;
 }
-.cf7-apply-section .intro_text h3 {
+.cf7-apply-section .il_block_intro h3 {
   font-size: 40px;
   font-weight: 700;
   color: var(--color-1);
   margin-top: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 11.5rem;
 }
 
 .il_tabs .il_tabs_nav ul {

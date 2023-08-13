@@ -24,7 +24,7 @@ function animateCounter(element, targetValue, duration) {
 
   document.addEventListener('wpcf7mailsent', function(event) {
     // Change the content of .cf7-apply-section .intro_text
-    var introText = document.querySelector('.cf7-apply-section .intro_text');
+    var introText = document.querySelector('.cf7-apply-section .il_block_intro');
     if (introText) {
         introText.innerHTML = '<img src="/wp-content/uploads/2023/08/OBJECTS-1.png"><h3>Thank you</h3>';
     }
